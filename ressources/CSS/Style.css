@@ -288,9 +288,9 @@ header {
 
 .galerie-title {
     position: absolute;
-    bottom: 10px;
-    left: 70px;
-    right:70px;
+    bottom: 20px;
+    left: 10px;
+    right:10px;
 }
 
 .galerie-title h4 {
