@@ -1,0 +1,513 @@
+/* DOCUMENT INFORMATION
+- Nom du Document: Blog Thé
+- Version : 1.0.0 (1 Version, 0 mise à jour 0 batch
+- Auteur : Wil
+*/
+
+
+/* COLOR
+- Body text 
+- h1: #eee
+- h2: 333333
+- h3:
+- p:  
+- Icon: #0c950c
+
+- button
+- button:hover
+
+- border
+*/
+
+/* FONT
+- Defaul: Lato
+- Subtitle
+*/
+
+/* CSS DIRECTORY 
+    1. = GLOBAL
+    2. = HEADER
+    3. = PRODUIT
+    4. = FAMILLE
+    5. = GATERIES PHOTOS
+    6. = AVIS CLIENTS
+    7. = TABLEAU DES PRIX
+    8. = FOOTER
+*/
+
+/* GLOBAL
+=========================================== */
+
+html {
+    background-color: white;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    /* apelle la police du lien importé  sur h1,h2,h3,h4*/
+    /* si ne trouve pas, il se met en Arial sans-serif par défault */
+    font-family: 'Lato', 'Arial', sans-serif;
+    /* transpose la police en gras */
+    text-transform: uppercase;
+
+
+}
+
+h1 {
+    color: #eee;
+    /* espacement entre chaque lette par rapport à celui par défaut soit en + ou en moins */
+    letter-spacing: +6px;
+    /* hauteur police*/
+    font-weight: 400;
+    /* espacement entre les mots */
+    word-spacing: 10px;
+
+}
+
+h2 {
+    color: #333333;
+    /* taille police */
+    font-size: 250%;
+    text-align: center;
+    /* marge du haut */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    /* ..after, c'est pour ajouter du comestique */
+    /* ici on fait un trait (block) de 2px de hauteur et 100px de largeur de couleur verte*/
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    /* pour afficher le contenu du display*/
+    content: " ";
+    /* pas de marge en haut et centrer au milieu*/
+    margin: 0 auto;
+    /* ajout marge du haut à 10px*/
+    margin-top: 10px;
+
+}
+
+h3 {
+    /* % => correspond au % de la taille initiale choisie sur lato  */
+    font-size: 160%;
+}
+
+
+
+p {
+    /* taille police */
+    font-size: 15px;
+    /* épaisseur police */
+    font-weight: 300;
+    /* hauteur police */
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 5px 60px;
+
+}
+
+/* HEADER
+=========================================== */
+
+header {
+
+    /* adapte l'image en hauteur */
+    background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+            rgba(7, 117, 230, 0.6)), url(../images/header.jpg);
+    height: 100Vh;
+
+    background-position: center;
+    /* adapte l'image à l'ecran */
+    background-size: cover;
+
+
+}
+
+.home-title {
+    /* ce qui est dans la classe hometitle sera pris en compte pour cette police */
+    position: absolute;
+    top: 30%;
+    /* right: 200px; */
+
+}
+
+.home-title h1 {
+    /* ce qui est dans la classe hometitle puis h1 sera pris en compte pour cette police */
+    /* Augmente la taille par défaut de 340%  */
+    font-size: 340%;
+    color: #fff;
+}
+
+.home-title h1 span {
+    /* ce qui est dans la classe hometitle puis h1 puis span sera pris en compte pour cette police */
+    font-weight: 700;
+    color: red;
+
+}
+
+.home-title p {
+    /* ce qui est dans la classe hometitle puis p sera pris en compte pour cette police */
+    color: white;
+
+}
+
+/* button */
+
+.btn {
+    /* choix du bouton, deroulant fixe... */
+    display: inline-block;
+    /* taille du bouton */
+    padding: 10px 30px;
+    /* decoration du text */
+    text-decoration: none;
+    /* arrondi les angles de la bordure */
+    border-radius: 30px;
+    /* Ajout de delai à l'appui du bouton avant la tache (sur couleur de fond,du text et de la bordure) */
+    transition: background-color 1s, color 1s, border 1s;
+    margin-bottom: 15px;
+
+
+}
+
+.btn-full {
+    /* couleur de fond du bouton */
+    background-color: azure;
+    /* couleur de fond du texte du bouton*/
+    color: #5ee077;
+    /* decaler la marge à droite*/
+    margin-right: 15px;
+}
+
+.btn-full:hover {
+    /* propiétes lors du passage de la souris sur cet element */
+    background-color: #5ee077;
+    color: #fff;
+}
+
+.btn-gost {
+    /* bordure 1 px pleine et blanc*/
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-gost:hover {
+    /* propiétes lors du passage de la souris sur cet element */
+    background-color: #5ee077;
+    border: 1px solid #5ee077;
+    color: #fff;
+}
+
+/* PRODUIT
+=========================================== */
+
+.produits-plus {
+    /* marge de 20 px ,  de 0 en haut et en bas et pas de marge à droite et à gauche*/
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+    /* propiétes lors du passage de la souris sur cet element  */
+    /* Seul l'icon sera impacté par cette propriété (car class produits-icon dans la class produits-plus */
+    color: #113097;
+    /* déplace l'élément du 20 px sur l'axe X */
+    transform: translateX(20px);
+}
+
+.produits-img {
+    /* mise à 100% et adaptation auto à la fenetre*/
+    max-width: 100%;
+    height: auto;
+}
+
+.produits-icon {
+    font-size: 34px;
+    color: #0c950c;
+    /* Ajout de delai à l'appui du bouton avant la tache sur tout le contenu */
+    transition: all 1s;
+}
+
+/* Famille Darts
+=========================================== */
+
+.famille-darts {
+    background-color: #cdf6e1;
+}
+
+.famille-details {
+    background-color: #61232326;
+    padding: 40px 30px;
+    /* bordure arrondi*/
+    border-radius: 10px;
+    /* effect ombre*/
+    box-shadow: 0 0 30px rgba(238, 23, 23, 0.87);
+    /* box-shadow: 5px 10px #888888; */
+    margin-bottom: 10px;
+}
+
+.famille-details img {
+    display: block;
+    /* Centrer l'image seulement avec display:block*/
+    margin: 0 auto;
+    /* Largeur 100%*/
+    width: 80%;
+    margin-bottom: 15px;
+
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+.famille-details p {
+    text-align: justify;
+}
+
+
+/* Galeries photos
+=========================================== */
+
+.galerie-img {
+    display:block;
+    background-size: cover;
+    background-position: top-center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(238, 23, 23, 0.87);
+    margin-bottom: 30px;
+
+}
+
+.galerie-title {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.galerie-title h4 {
+    color: rgb(27, 45, 207);
+    letter-spacing: +1px;
+    font-weight: 800;
+    word-spacing: 2px;
+}
+
+/* Avis CLIENTS
+=========================================== */
+
+.clients {
+    background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+            rgba(7, 117, 230, 0.6)), url(../images/the-paysage.jpg);
+    background-size: cover;
+    /* fixe l'image */
+    background-attachment: fixed;
+
+}
+
+/*.client-profil {
+     height: 200px; 
+}*/
+
+.clients h2 {
+    color: white;
+}
+
+/* rajoute un pseudo element after - dans l'element after de h2 qui se situe dans client, on le met de couleur blanche*/
+.clients h2:after {
+    background-color: white;
+}
+
+blockquote {
+    padding: 5px;
+    /* mettre le texte en Italique */
+    font-size: italic;
+    line-height: 130%;
+    color: white;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 800%;
+    font-family: "Sanchez", serif;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+    /* position: absolute;  */
+    /* bottom: 5px; */
+    /* right: 200px; */
+}
+
+cite img {
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 15px;
+
+}
+
+/* TABLEAU DES PRIX
+=========================================== */
+
+.pack {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.27);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pack h3 {
+    color: green;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+
+}
+
+.pack span {
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+
+.pack-premium {
+    background-color: #1ee91e;
+    color: white;
+}
+
+.pack-premium-title {
+    font-size: 10px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    background-color: #fff;
+    color: green;
+    border-radius: 10px;
+
+}
+
+.pack-elite {
+    background-color: #08bb08;
+    color: white;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 2px solid #e3e3e3;
+
+}
+
+.pack-content ul {
+    /* enlève les effets de la liste ul */
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 55px;
+
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+.pack-signup:hover .btn-pack {
+    background-color: #6ddf6d;
+    color: #fff;
+}
+
+.btn-pack {
+    background-color: green;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+/* CONTACT
+=========================================== */
+
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: green;
+    color: #fff;
+}
+
+.contact-form-small {
+    color: yellowgreen;
+}
+
+.template {
+    background-color: #edebfb;
+}
+
+.map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    /* ne déborde pas de la colonne */
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER
+=========================================== */
+footer {
+    background-color: rgb(26, 24, 24);
+    color: white;
+    height: 60px;
+    padding: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: white;
+}
+
+/* Nav
+=========================================== */
+.myBG {
+    background-color: #a8c3de;
+
+}
+
+.mycolor {
+    color: rgb(53, 55, 136);
+}

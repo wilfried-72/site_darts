@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+
+    <Title>Mon Blog</Title>
+    <!-- Pour reconnaissance accent avec <> explorer -->
+    <meta charset=UTF-8">
+
+    <!-- permet d adpater le site internet à la taille des différents écrans avec width=device-width-->
+    <!-- et initial-scale=1 permet de mettre à l'echelle 1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- -----------------------Icon------------------------- -->
+
+    <!-- va chercher le lien sur internet pour les icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <!-- ------------------Fronts------------------------ -->
+
+    <!-- va chercher le lien sur internet pour le font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+
+    <!-- Installe la librairie de boot strap - tjrs mettre cetteLigne avant le CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+    <!-- ---------------------Styles---------------------- -->
+
+    <!-- va chercher le fichier .CSS -->
+    <link rel="stylesheet" href="/Projet/Site-Darts-bootstrap/ressources/CSS/Style.css">
+
+
+</Head>
+
+
+
+<body>
+
+    <!--________________________________________________________Header_________________________________________________-->
+    <header>
+
+
+
+        <!-- ---------------------Creation menu NAV------------------------>
+
+        <!-- "nav" balise pour créer menu -->
+        <!-- "Navbar": menu, "navbar-expand-lg": spécification comme md 12 (lg:large;md meduim) "navbar-light": police caractère du texte (ici noir) "bg-light":backlight du menu--->
+
+        <!-- nav par défaut-->
+        <!-- <nav class="navbar navbar-expand-ld navbar-light bg-light fixed-top"> -->
+
+        <nav class="navbar navbar-expand-md navbar-light myBG fixed-top">
+
+            <div class="container">
+
+                <!-- Ajoute un logo -->
+                <img src="/Projet/Site-Darts-bootstrap/ressources/images/logo.jpg" width="30" height="30"
+                    class="d-inline-block align-right" alt="logo" loading="lazy">
+
+                <!-- Ajoute le nom après le logo -->
+                <a class="navbar-brand" href="lien du site">Darts site</a>
+
+                <!-- Ajoute un bouton pour le responsive -->
+                <!-- class pour le style, type:bouton, data-toggle:fait apparaitre le sous menu quand on clique sur le bouton, data target: affiche le menu qui est dans la div navbar-nav, aria controle fais deplier les sous menus-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MonMenu"
+                    aria-controls="MomMenu" aria-expanded="false" aria-label="Menu pour mobile">
+                    <!-- symbole du bouton menu (burger)-->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="MonMenu">
+                    <!-- C'est ce qui suit après le logo et ml-auto met le titre à gauche et correspond marginleft auto-->
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="#page">Qui sommes-nous</a>
+                        <a class="nav-item nav-link" href="#produits">Nos produits</a>
+                        <a class="nav-item nav-link" href="#photos">Photos </a>
+                        <a class="nav-item nav-link" href="#packs">Nos packs</a>
+                        <a class="nav-item nav-link" href="#contact">contact</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- autres méthodes utilisés dans boot strapp 
+                --------------------
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <a class="navbar-brand" href="#">Hidden brand</a>
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                   
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+                -----------------------
+                -->
+
+        </nav>
+
+
+        <!-- ---------------------Class container1------------------------>
+        <div class="container" id="page">
+
+            <!--------ROW Titre 1 (1 élément de 12 colonnes / Format boot strap)--->
+            <div class="row">
+                <div class="col-md-12 home-title">
+                    <!-- class col-md-12 et home title-->
+                    <!-- Titre   -->
+                    <h1>L'histoire des <span>darts</span></h1> <!-- span sert à découpé la phrase pour garder un mot-->
+                    <!-- Paragraphe -->
+                    <p> Le format de la cible doit être américain, centre de 40 mm.
+                        La fléchette doit être pourvue d'une pointe nylon.<br>La longueur de la fléchette ne doit pas
+                        excéder 20 cm du bout de la pointe à l'extrémité de l'empennage.<br>La largeur de l'empennage ne
+                        doit pas dépasser 3,38 cm, et ne pas avoir plus de quatre ailes à leur empennage.<br>
+                        Le poids de la fléchette complète ne doit pas dépasser 18 grammes.<br>Les fléchettes ne doivent
+                        pas avoir de pointes cassées ou coupées.<br>Le non-respect des normes énoncées entraînera la
+                        perte
+                        de
+                        toutes les manches jouées.<br>Le joueur pourra reprendre son match là où il a été stoppé, avec
+                        des
+                        fléchettes aux normes.<br>Toute contestation concernant le poids des fléchettes doit avoir lieu
+                        avant ou pendant le match, elle ne sera pas permise après le match.</p>
+
+
+                    <!-- Balise de lien pour bouton-->
+                    <!-- Bouton1-->
+                    <a href="#produits" class="btn btn-full"> Produits></a>
+                    <!-- Bouton2-->
+                    <a href="#contact" class="btn btn-gost"> Contacter-nous</a>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!--------End ROW Titre 1--->
+        </div>
+        <!-- ---------------------End Class container1------------------------>
+
+    </header>
+  
+
+
+
+    <!--__________________________________________________________Section Produits_________________________________________________-->
+    <section>
+
+        <!-- ---------------------Class container2------------------------>
+        <div class="container" id="produits">
+
+            <!--------ROW Titre 2 (1 élément de 12 colonnes / format boot strap)--->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Nos produits</h2>
+                </div>
+            </div>
+            <!--------End ROW Titre 2 --->
+
+
+
+            <!--ROW "Corps" (2 élements pour un total de 12 colonnes / format boot strap)--------->
+            <div class="row">
+
+                <!-- Element ROW Image-->
+                <div class="col-md-7">
+                    <!-- image du produit -->
+                    <img src="../Site-Darts-bootstrap/ressources/images/Flechettes.jpg" alt="tea" class="produits-img">
+                </div>
+                <!-- Fin ROW Image -->
+
+
+                <!-- Element ROW Texte -->
+                <div class="col-md-5">
+
+                    <!-------------------------------Produit 1 --------------------------------->
+                    <div class="produits-plus">
+
+                        <!-- ROW Produit-1 (12 colonnes)-->
+                        <div class="row">
+
+                            <!-- Icon1 (2 colonnes sur 12)-->
+                            <div class="col-md-2">
+                                <div class="produits-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <!-- End Icon1 -->
+
+                            <!-- Text1 (10 colonnes sur 12)-->
+                            <div class="col-md-10">
+                                <h3>Promotion</h3>
+                                <p>Pour une livraison en France Métropolitaine. Voir Conditions Générales de
+                                    Ventes pour plus d'informations.</p>
+                            </div>
+                            <!-- End texte1 -->
+
+                        </div>
+                        <!-- End ROW Produit-1 -->
+                    </div>
+                    <!-- -----------------------------End Produit 1 ------------------------------- -->
+
+
+
+
+                    <!-- -----------------------------Produit 2 ------------------------------- -->
+                    <div class="produits-plus">
+
+                        <!-- ROW Produit-2 (12 colonnes)-->
+                        <div class="row">
+
+                            <!-- Icon2 (2 colonnes sur 12)-->
+                            <div class="col-md-2">
+                                <div class="produits-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+
+                            </div>
+                            <!-- End Icon2-->
+
+                            <!-- Text2 (10 colonnes sur 12)-->
+                            <div class="col-md-10">
+                                <h3>Flechettes et Accessoires</h3>
+                                <p>Fut, Shaft et ailettes</p>
+                            </div>
+                            <!-- End Text2 -->
+
+                        </div>
+                        <!-- End ROW Produit-2 -->
+                    </div>
+                    <!-------------------------------End Produit 2 --------------------------------->
+
+
+
+                    <!-------------------------------Produit 3 --------------------------------->
+                    <div class="produits-plus">
+
+                        <!-- ROW Produit-3 (12 colonnes)-->
+                        <div class="row">
+
+                            <!-- Icon3 (2 colonnes sur 12)-->
+                            <div class="col-md-2">
+                                <div class="produits-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                            </div>
+                            <!-- End Icon3--
+
+                            -- Text3 (10 colonnes sur 12)-->
+                            <div class="col-md-10">
+                                <h3>Cibles</h3>
+                                <p>Découvrez une large sélection de cibles.</p>
+                            </div>
+                            <!-- End Text3 -->
+
+
+                        </div>
+                        <!-- End ROW Produit-3 -->
+                    </div>
+                    <!-------------------------------End Produit 3 --------------------------------->
+
+
+                </div>
+                <!-- End ROW Texte-->
+            </div>
+            <!-- End ROW "Corps"-->
+        </div>
+        <!-- ---------------------End Class container2------------------------>
+
+    </section>
+
+
+
+
+
+    <!--__________________________________________________________Section Famille Darts_________________________________________________-->
+    <section class="famille-darts">
+        <!-- ---------------------Class container3------------------------>
+        <div class="container">
+
+            <!--------ROW Titre 3 (1 élément de 12 colonnes / format boot strap)--->
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Famille de Produits</h2>
+                </div>
+            </div>
+            <!--------End ROW Titre 3 --->
+
+            <!--ROW "Corps" (4 élements pour un total de 12 colonnes / format boot strap)--------->
+            <div class="row">
+
+
+                <!-- Thé 1 -->
+                <div class="col-md-4">
+                    <div class="famille-details">
+                        <img src="/Projet/Site-Darts-bootstrap/ressources/images/jeux Flechettes.jpg">
+                        <h4>Jeux de fléchettes</h4>
+                        <p>Tous les jeux de fléchettes :
+                            Fléchettes pointes acier pour cibles traditionnelles en sisal
+                            Fléchettes pointes nylon pour cible électronique
+                            Nombreuses pièces détachées pour personnaliser vos darts et les adapter à votre lancer.).
+                        </p>
+                    </div>
+                </div>
+                <!-- End Thé 1 -->
+
+                <!-- Thé 2 -->
+                <div class="col-md-4">
+                    <div class="famille-details">
+                        <img src="/Projet/Site-Darts-bootstrap/ressources/images/Accessoires.jpg">
+                        <h4>Accessoires</h4>
+                        <p>-Le fût est le cœur de la fléchette. Son matériau, son poids et ses dimensions influent
+                            grandement sur la capacité du joueur à répéter ses trajectoires.<br>
+                            -La tige, également appelée shaft est lecentre de gravité de la fléchette.<br>
+                            -L'ailette, pour stabiliser les volées.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Thé 2 -->
+
+
+                <!-- Thé 3 -->
+                <div class="col-md-4">
+                    <div class="famille-details">
+                        <img src="/Projet/Site-Darts-bootstrap/ressources/images/Cible.jpg">
+                        <h4>Cibles</h4>
+                        <p>Cible électronique ou traditionnelle :
+                            Deux types de jeu de fléchettes existent : le jeu sur cible électronique avec fléchettes à
+                            pointe plastique, ou le jeu sur cible traditionnelle avec des fléchettes à pointes acier.
+                            Avant de choisir votre matériel, il vous faudra en premier lieu définir sur quel type de
+                            cible vous désirez jouer.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Thé 3 -->
+
+            </div>
+            <!--End ROW "Corps"--->
+        </div>
+        <!-- ---------------------End Class container3------------------------>
+
+
+
+
+
+    </section>
+
+
+
+    <!--______________________________________________________Section Galeries photos_________________________________________________-->
+    <section>
+
+
+        <div class="container" id="photos">
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Galeries photos</h2>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="galerie-img" style="background-image:url(ressources/images/galerie/photo1.jpg)">
+                        <div class="galerie-title">
+                            <h4>Jeux de flechettes</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="galerie-img" style="background-image:url(ressources/images/galerie/photo2.jpg)">
+                        <div class="galerie-title">
+                            <h4>Championnats du monde de fléchettes: Michael van Gerwen - Peter Wright</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="galerie-img" style="background-image:url(ressources/images/galerie/photo3.jpg)">
+                        <div class="galerie-title">
+                            <h4>Cibles en feu</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="galerie-img" style="background-image:url(ressources/images/galerie/photo4.jpg)">
+                        <div class="galerie-title">
+                            <h4>La rochelle</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="galerie-img" style="background-image:url(ressources/images/galerie/photo5.jpg)">
+                        <div class="galerie-title">
+                            <h4>Darts Live</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+  
+
+    <!--______________________________________________________Section client_________________________________________________-->
+    <section class="clients">
+
+
+        <div class="container" id="packs">
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>avis clients</h2>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="client-profil">
+                        <!-- blockquote est une balise commentaire -->
+                        <blockquote>
+                            <p>Le meilleur site de Darts!!</p>
+                        </blockquote>
+                        <!-- cite est une balise pour mettre le nom de l'auteur du commentaire -->
+                        <cite> <img src="ressources/images/clients/emilie.jpg"> Emilie de chateau en Blaye </cite>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="client-profil">
+                        <!-- blockquote est une balise commentaire -->
+                        <blockquote>
+                            <p>Matos au top.
+                                Livraison rapide.</p>
+                        </blockquote>
+                        <!-- cite est une balise pour mettre le nom de l'auteur du commentaire -->
+                        <cite> <img src="ressources/images/clients/blaise.jpg"> BLaise de Charente </cite>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="client-profil">
+                        <!-- blockquote est une balise commentaire -->
+                        <blockquote>
+                            <p>Top.Beaucoup de choix dans les accessoires.</p>
+                        </blockquote>
+                        <!-- cite est une balise pour mettre le nom de l'auteur du commentaire -->
+                        <cite> <img src="ressources/images/clients/julia.jpg"> Julia de Corse </cite>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--______________________________________________________Section TABLEAU DES PRIX_________________________________________________-->
+    <section>
+
+
+        <div class="container">
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Nos packs</h2>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <!-- pack1 -->
+                <div class="col-md-4">
+                    <div class="pack">
+                        <div class="pack-title">
+                            <h3> Basique</h3>
+                            <h4>Gratuit</h4>
+                            <p>30 jours d'essai</p>
+
+
+
+                            <div class="pack-content">
+                                <!-- "Ul" balise pour faire liste/tableau -->
+                                <ul>
+                                    <!-- "il" balise non chiffrée et "ol" chiffrée (1-2-3 -->
+                                    <li> <i class="fas fa-check-circle"></i> 5 ailettes nylon</li>
+                                    <li> <i class="fas fa-times-circle"></i> 10 fut au choix</li>
+                                    <li> <i class="fas fa-times-circle"></i> 1 serviette</li>
+                                    <li> <i class="fas fa-times-circle"></i> 1 étui de rangement</li>
+                                </ul>
+                            </div>
+
+                            <div class="pack-signup">
+                                <a ref="/" class="btn btn-pack"> Je m'inscris</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pack2 -->
+                <div class="col-md-4">
+                    <div class="pack pack-premium">
+                        <div class="pack-title">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3>Premium</h3>
+                                    <h4>10€<span>/mois</span></h4>
+                                    <p>pack découverte</p>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <p class="pack-premium-title">Le plus demandé</p>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <div class="pack-content">
+                                <!-- "Ul" balise pour faire liste/tableau -->
+                                <ul>
+                                    <!-- "il" balise non chiffrée et "ol" chiffrée (1-2-3 -->
+                                    <li> <i class="fas fa-check-circle"></i> 5 ailettes nylon</li>
+                                    <li> <i class="fas fa-check-circle"></i> 10 fut au choix</li>
+                                    <li> <i class="fas fa-times-circle"></i> 1 serviette</li>
+                                    <li> <i class="fas fa-times-circle"></i> 1 étui de rangement</li>
+                                </ul>
+                            </div>
+
+                            <div class="pack-signup">
+                                <a ref="/" class="btn btn-pack "> Je m'inscris</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pack3 -->
+                <div class="col-md-4">
+                    <div class="pack pack-elite">
+                        <div class="pack-title">
+                            <h3> Pack complet</h3>
+                            <h4>30€<span>/mois</span></h4>
+                            <p>+ cadeau offert</p>
+
+
+
+                            <div class="pack-content">
+                                <!-- "Ul" balise pour faire liste/tableau -->
+                                <ul>
+                                    <!-- "il" balise non chiffrée et "ol" chiffrée (1-2-3 -->
+                                    <li> <i class="fas fa-check-circle"></i> 5 ailettes nylon</li>
+                                    <li> <i class="fas fa-check-circle"></i> 10 fut au choix</li>
+                                    <li> <i class="fas fa-check-circle"></i> 1 serviette</li>
+                                    <li> <i class="fas fa-check-circle"></i> 1 étui de rangement</li>
+                                </ul>
+                            </div>
+
+                            <div class="pack-signup">
+                                <a ref="/" class="btn btn-pack "> Je m'inscris</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+ 
+
+    <!--______________________________________________________Section CONTACT_________________________________________________-->
+    <section>
+
+
+        <div class="container" id="contact">
+
+
+            <div class="row">
+
+                <!-- Formulaire -->
+                <div class="col-md-8 template">
+
+                    <div class="row">
+                        <!-- titre -->
+                        <div class="col-md-12">
+                            <h2>Conctatez-nous</h2>
+                            <p> Pour toutes vos questions concernant le service client, comptabilité ou SAV,
+                                contacter-nous. </p>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <!-- Phone -->
+                        <div class="col-md-4">
+                            <div class="phone">
+                                <p><i class="fas fa-phone"></i> 02 43 56 54 41</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <!-- Adress -->
+                            <div class="adress">
+                                <p><i class="fas fa-map-marker-alt"> </i> 50 rue des planthes, 341220 Darts en
+                                    Champagne</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- "form" balise pour faire des formulaires -->
+                    <form>
+
+                        <div class="row">
+
+                            <!-- Nom -->
+
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                    <!-- "Label" balise pour faire des label ds formulaires -->
+                                    <label>Nom:</label>
+                                    <!-- "input" balise pour faire des entrées ds formulaires etun "id" unique pour récupérer cette entrée -->
+                                    <input type="text" id="name" placeholder="Nom">
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-form">
+                                    <label>Email:</label>
+                                    <!-- type "email" permet d'avoir message d"erreur si format NOK -->
+                                    <!-- "placeholder" met un texte dans le label -->
+                                    <Input type="email" id="email" placeholder="votre email">
+                                    <!-- "small" met un texte en plus -->
+                                    <div class="contact-form-small">
+                                        <small>Vous ne recevrez pas de PUB</small>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="row">
+                            <!-- service contact-->
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <label>Selectionner le service:</label>
+                                    <!-- "select" balise pour faire choix multiple -->
+                                    <select name="" id="service">
+                                        <!-- "option" balise pour inserer des choix -->
+                                        <option>Service client</option>
+                                        <option>Service comptabilité</option>
+                                        <option>SAV</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <!-- message -->
+                            <div class="col-md-12">
+                                <div class="contact-form">
+                                    <label>Votre message:</label>
+                                    <!-- "textarea" balise pour inserer une input text et "row" choisit le nb ligne affichage de la saisie du texte -->
+                                    <textarea id="message" rows="3" class="contact-message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <!-- bouton envoyer -->
+                            <div class="col-md-12">
+                                <button class="btn btn-contact">Envoyer</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <!-- carte -->
+                <div class="col-md-4 map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.445280336629!2d0.19546231550436058!3d48.005106568357256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e288d20f39a74d%3A0x2b0190d80c0d68a6!2sPalais%20des%20Th%C3%A9s!5e0!3m2!1sfr!2sfr!4v1593259412637!5m2!1sfr!2sfr"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--______________________________________________________FOOTER_________________________________________________-->
+
+    <footer>
+        <div class="copyright">
+            <p>Site Darts - 2019. <a href="/">Mentions legales</a> </p>
+
+        </div>
+
+    </footer>
+    <!--______________________________________________________END FOOTER_________________________________________________-->
+
+
+    <!--______________________________________________________SCRIPT pour MENU NAVBAR_________________________________________________-->
+    <!-- Install ces sripts pour aue les animations fonctionnent-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+
+
+</html>
