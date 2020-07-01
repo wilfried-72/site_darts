@@ -276,7 +276,7 @@ header {
 
 .galerie-img {
     display:block;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 300px;
@@ -288,15 +288,17 @@ header {
 
 .galerie-title {
     position: absolute;
-    bottom: 30px;
-    left: 40px;
+    bottom: 10px;
+    left: 140px;
+    right:70px;
 }
 
 .galerie-title h4 {
-    color: rgb(27, 45, 207);
+    color: rgb(207, 230, 9);
     letter-spacing: +1px;
-    font-weight: 800;
-    word-spacing: 2px;
+    font-weight: 700;
+    word-spacing: -1px;
+    margin-bottom: 20px;
 }
 
 /* Avis CLIENTS
