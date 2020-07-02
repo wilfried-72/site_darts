@@ -245,20 +245,32 @@ header {
     background-color: #61232326;
     padding: 40px 30px;
     /* bordure arrondi*/
-    border-radius: 10px;
+    border-radius: 20px;
     /* effect ombre*/
     box-shadow: 0 0 30px rgba(238, 23, 23, 0.87);
     /* box-shadow: 5px 10px #888888; */
     margin-bottom: 10px;
+    /* width: auto; */
+    min-height: 600px;
+
 }
 
-.famille-details img {
+
+.cadre {
+
+    width: 100%;
+    height: 200px;
+}
+
+.cadre img {
     display: block;
-    /* Centrer l'image seulement avec display:block*/
-    margin: 0 auto;
-    /* Largeur 100%*/
-    width: 80%;
-    margin-bottom: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+
 
 }
 
@@ -275,26 +287,37 @@ header {
 =========================================== */
 
 .galerie-img {
-    display:block;
+    display: block;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 300px;
+    min-height: 330px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 30px rgba(238, 23, 23, 0.87);
     margin-bottom: 30px;
+}
 
+.galerie-img style {
+
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .galerie-title {
+    width: 100%;
     text-align: center;
-    /* position: absolute; */
-    /* bottom: 20px; */
-    /* left: 30px; */
-    /* right:30px; */
 }
 
 .galerie-title h4 {
+    width: 100%;
     color: rgb(207, 230, 9);
     letter-spacing: +1px;
     font-weight: 700;
@@ -314,9 +337,10 @@ header {
 
 }
 
-/*.client-profil {
-     height: 200px; 
-}*/
+.client-profil p {
+    display: table-cell;
+    vertical-align: middle;
+}
 
 .clients h2 {
     color: white;
@@ -328,11 +352,11 @@ header {
 }
 
 blockquote {
-    padding: 5px;
+    line-height: 110%;
+    color: white;
+    padding: 10px;
     /* mettre le texte en Italique */
     font-size: italic;
-    line-height: 130%;
-    color: white;
 }
 
 blockquote:before {
@@ -349,9 +373,8 @@ cite {
     font-size: 90%;
     display: block;
     margin-top: 20px;
-    /* position: absolute;  */
-    /* bottom: 5px; */
-    /* right: 200px; */
+    margin-bottom: 20px;
+
 }
 
 cite img {
